@@ -5,34 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QA Cinemas</title>
     <!-- bootstrap css -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <style>
+        .img-thumbnail {
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 <body>
     <!-- code for navbar start-->
-    <nav class="navbar navbar-light bg-secondary">
-        <a href="index.html" class="navbar-brand">QA</a>
+    <nav class="navbar navbar-light bg-light">
+        <a href="index.html" class="navbar-brand">
+            <img src="../resources/QA-logo.png" width="40" height="40" alt="QA logo">
+            Cinemas
+        </a>
         <button class="btn" type="button" data-bs-toggle="collapse" href="#togglethis">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="togglethis">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="index.html">Login</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html">Contact us</a>
+                    <a href="schedule.html">Schedule</a>
                 </li>
                 <li class="nav-item">
-                    <a href="index.html">About us</a>
+                    <a href="signup.html">Sign up</a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- code for navbar end -->
-
-    <p>mamma mia</p>
+    <br>
+    <div class="container" id="main-container">
+        <div class="row">
+            <div class="col-md text-center">
+                <img src="../resources/cinema-seats.jpg" class="img-fluid rounded w-100" alt="Cinema seats">
+            </div>
+        </div>
+        <br>
+        <div class="row bg-light rounded">
+            <div class="col-md">
+                <article>
+                    <h2>Welcome to QA Cinemas website</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a consequat sem. Morbi in tortor leo. Curabitur id lobortis purus. Etiam eget fringilla dui. Ut faucibus placerat massa eu aliquam. Ut lacinia nibh enim, ac lobortis lectus tristique in. Proin facilisis sem lacus, semper porttitor nulla tempor sed.</p>
+                    
+                    <p>Sed non felis metus. Nam vel urna diam. Mauris vestibulum libero quis augue blandit, eget faucibus magna accumsan. Integer sit amet odio ligula. Duis pharetra bibendum consequat. Mauris nec porttitor turpis, vitae maximus purus. Nam eu elit eu elit porttitor ultrices. Integer at maximus metus. Nunc nec neque non nibh feugiat ullamcorper vitae lobortis quam. In in arcu scelerisque, cursus massa at, consequat nisl.</p>
+                </article>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md" id="highlight-1">
+                <img src="../resources/highlight-1.png" class="img-thumbnail">
+            </div>
+            <div class="col-md" id="highlight-2">
+                <img src="../resources/highlight-2.png" class="img-thumbnail">
+            </div>
+            <div class="col-md" id="highlight-3">
+                <img src="../resources/highlight-3.png" class="img-thumbnail">
+            </div>
+        </div>
+        <br>
+        <div class="row bg-light rounded">
+            <div class="col-md">
+                <article>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a consequat sem. Morbi in tortor leo. Curabitur id lobortis purus. Etiam eget fringilla dui. Ut faucibus placerat massa eu aliquam. Ut lacinia nibh enim, ac lobortis lectus tristique in. Proin facilisis sem lacus, semper porttitor nulla tempor sed.</p>
+                    
+                    <p>Sed non felis metus. Nam vel urna diam. Mauris vestibulum libero quis augue blandit, eget faucibus magna accumsan. Integer sit amet odio ligula. Duis pharetra bibendum consequat. Mauris nec porttitor turpis, vitae maximus purus. Nam eu elit eu elit porttitor ultrices. Integer at maximus metus. Nunc nec neque non nibh feugiat ullamcorper vitae lobortis quam. In in arcu scelerisque, cursus massa at, consequat nisl.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+    
+    <br>
+    <!-- footer -->
+    <footer class="border-top">
+        <div class="text-center">Copyright QA Cinemas 2020</div>
+    </footer>
 
     <!-- bootstrap js bundle -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
 </html>
